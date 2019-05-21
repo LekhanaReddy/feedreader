@@ -1,8 +1,6 @@
-
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
-
 
 ## Why this Project?
 
@@ -16,24 +14,22 @@ Whether you work in an organization that uses test-driven development or in an o
 
 ## OBSERVATIONS
 
-+ Feed reader project contains the following files :
-  1. jasmine/spec
-  2. js/app.js
-  3. index.HTML
-  4. css/icomoon.CSS
-  5. css/style.css
-  6. css/normalize.css
-  7. fonts
+-   Feed reader project contains the following files :
+    1.  jasmine/spec
+    2.  js/app.js
+    3.  index.HTML
+    4.  css/icomoon.CSS
+    5.  css/style.css
+    6.  css/normalize.css
+    7.  fonts
 
-## how to Run  
+## how to Run
 
-* Open and run index.html file in your favourite web browser.
-
+-   Open and run index.html file in your favourite web browser.
 
 ## What I  have learnt?
 
 I have learnt how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
 
 ## How will this help my career?
 
@@ -43,22 +39,25 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 ## DESCRIPTIONS
 
-1. **Jasmine**: Jasmine is a behavior-driven development framework for testing JavaScript code.
-  + It does not depend on any other JavaScript frameworks.
-  + It does not require a DOM.
-  + To start using jasmine replace the source or source or spec files with your own.
+1.  **Jasmine**: Jasmine is a behavior-driven development framework for testing JavaScript code.
 
-2. **suits** : It begins with a call to the global function **describe** with two parameters `string` and a `function`.
-  + The string is a name or title of the test suits.
-  + A function is the block of the with in that code has been written.
+-   It does not depend on any other JavaScript frameworks.
+-   It does not require a DOM.
+-   To start using jasmine replace the source or source or spec files with your own.
 
-3. **specs** : Specs are defined by calling the global Jasmine function `it`, which, like `describe` takes a string and a function.
-  + The string is the title of the spec.
-  + function is the spec, or test.
-  + Contains one or more expectations that tests the state of the code.
-  + An expectation is an assertion that is true or false
-    + all true expectations-passing specs
-    + one or more false -failing specs
+2.  **suits** : It begins with a call to the global function **describe** with two parameters `string` and a `function`.
+
+-   The string is a name or title of the test suits.
+-   A function is the block of the with in that code has been written.
+
+3.  **specs** : Specs are defined by calling the global Jasmine function `it`, which, like `describe` takes a string and a function.
+
+-   The string is the title of the spec.
+-   function is the spec, or test.
+-   Contains one or more expectations that tests the state of the code.
+-   An expectation is an assertion that is true or false
+    -   all true expectations-passing specs
+    -   one or more false -failing specs
 
 # Development Strategy
 
@@ -66,40 +65,40 @@ For a refresher (or reference) before you begin writing code, I recommend review
 
 ## WHAT I HAVE DONE
 
-1. I have read the starter code very carefully
-    * Opened up `index.html` and review the functionality of the application within browser
-    * Read the code in `app.js` and also read all code comments
-    * Checked out `style.css` and styling applied to the application
-2. Explored the Jasmine spec file in `feedreader.js`
-    * This is the file in which I have written tests
-    * read all code comments here as well
-    * Review the [Jasmine documentation](http://jasmine.github.io) if needed
-3. Edited the `allFeeds` variable in `app.js` to make the provided test fail
-    * Seen how Jasmine visualizes this failure in my application
-    * Return the `allFeeds` variable to a passing state after reviewing the failed test
-4. Written a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
-5. Written a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty
-    * Check the previous test and compare with this one.
-6. Written a new test suite named `"The menu"`
-    * Applied specs and suits for the menu and directly we get the class name from the html code with thw help of $ function.
-7. Written a test that ensures the menu element is hidden by default
-    * I have to analyzed the HTML and the CSS to determine how the hiding/showing of the menu element is implemented.
-    * Code in `app.js` and menu-hidden is declared to be false first and then after clicking changes to be true.
-8. Written a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
-    * Compare the code with the previous test code.
-9. Written a test suite named `"Initial Entries"`
-    * Loadfeed is asynchronous so I have used Jasmine's beforeEach , done function and assigned 0 to the loadfeed.
+1.  I have read the starter code very carefully
+    -   Opened up `index.html` and review the functionality of the application within browser
+    -   Read the code in `app.js` and also read all code comments
+    -   Checked out `style.css` and styling applied to the application
+2.  Explored the Jasmine spec file in `feedreader.js`
+    -   This is the file in which I have written tests
+    -   read all code comments here as well
+    -   Review the [Jasmine documentation](http://jasmine.github.io) if needed
+3.  Edited the `allFeeds` variable in `app.js` to make the provided test fail
+    -   Seen how Jasmine visualizes this failure in my application
+    -   Return the `allFeeds` variable to a passing state after reviewing the failed test
+4.  Written a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
+5.  Written a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty
+    -   Check the previous test and compare with this one.
+6.  Written a new test suite named `"The menu"`
+    -   Applied specs and suits for the menu and directly we get the class name from the html code with thw help of $ function.
+7.  Written a test that ensures the menu element is hidden by default
+    -   I have to analyzed the HTML and the CSS to determine how the hiding/showing of the menu element is implemented.
+    -   Code in `app.js` and menu-hidden is declared to be false first and then after clicking changes to be true.
+8.  Written a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
+    -   Compare the code with the previous test code.
+9.  Written a test suite named `"Initial Entries"`
+    -   Loadfeed is asynchronous so I have used Jasmine's beforeEach , done function and assigned 0 to the loadfeed.
 10. Written a test that ensures when the `loadFeed` function is called and completes its work, the length should be at least a single `.entry` element within the `.feed` container
-    * Jasmine's `beforeEach()`function is called once before each spec in the describe in which it is called.
-    * `loadFeed()` function in `app.js` is asynchronous and 0 is loaded to declare as initial.
+    -   Jasmine's `beforeEach()`function is called once before each spec in the describe in which it is called.
+    -   `loadFeed()` function in `app.js` is asynchronous and 0 is loaded to declare as initial.
 11. Written a test suite named `"New Feed Selection"`
 12. Written a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes
-    * Declare two variables, assign loadfeed 0 as before for first variable, assign .feed class data from html and compare with second variable assign loadfeed 1 ,if equals then done is successfully worked.
+    -   Declare two variables, assign loadfeed 0 as before for first variable, assign .feed class data from html and compare with second variable assign loadfeed 1 ,if equals then done is successfully worked.
 
 Additionally, note that:
 
- * No test should be dependent on the results of another
- * Callbacks are used to ensure that feeds are loaded before they are tested
- * Error handling is implemented for undefined variables and out-of-bound array access
- * When completed, all of my tests are passed
- * So I have successfully completed my test cases.
+-   No test should be dependent on the results of another
+-   Callbacks are used to ensure that feeds are loaded before they are tested
+-   Error handling is implemented for undefined variables and out-of-bound array access
+-   When completed, all of my tests are passed
+-   So I have successfully completed my test cases.
